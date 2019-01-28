@@ -19,9 +19,9 @@ It can also be run in batch mode using the scripts contained on the CRC.
 
 ### Authorship
 
-Frentz, Bryce
-Gyurjinyan, Armen
-Tan, Wanpeng
+Frentz, Bryce<br/>
+Gyurjinyan, Armen<br/>
+Tan, Wanpeng<br/>
 Sauer, Ethan
 
 Updated January 2019
