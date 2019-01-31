@@ -51,7 +51,7 @@ void Run(Int_t eGroup){
     // Create an output file for the histograms
     ostringstream stm;
     stm << eGroup;
-    TFile file("/afs/crc.nd.edu/group/nsl/nuc/users/bfrentz/analysis/output/data/finalAngDist/data" + TString(stm.str()) + "MeV_correlation.root","RECREATE");
+    TFile file("/afs/crc.nd.edu/group/nsl/nuc/users/bfrentz/analysis/output/data/finalAngDist/twoDegree/data" + TString(stm.str()) + "MeV_correlation.root","RECREATE");
 
     TChain chain("evtTree");
     
