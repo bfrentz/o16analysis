@@ -8,7 +8,7 @@
 {
 	// Open the root file and get the histograms
 	// USER CHANGE: Beam Energy
-	TFile *f = new TFile("./twoDegree/data29MeV_correlation.root");
+	TFile *f = new TFile("./tenDegree/data24MeV_correlation.root");
 	TH1F *h0 =  (TH1F*)f->Get("h1angdistL0_Be");						// L0 = 15.36
 	TH1F *h1 =  (TH1F*)f->Get("h1angdistL1_Be");						// L1 = 16.46
 	TH1F *h2 =  (TH1F*)f->Get("h1angdistL2_Be");						// L2 = 17.20
@@ -36,34 +36,34 @@
 	
 
 	// Create output file
-	TFile *fout = TFile::Open("./compareDistributions29.root","UPDATE");
+	TFile *fout = TFile::Open("./compareDistributions24.root","UPDATE");
 
 	// Set new histogram names for write out
 	// USER CHANGE: Beam Energy
-	hL0->SetName( "h29_twoDegree_L0");				// copied
-	hL1->SetName( "h29_twoDegree_L1");
-	hL2->SetName( "h29_twoDegree_L2");
-	hL3->SetName( "h29_twoDegree_L3");
-	hL4->SetName( "h29_twoDegree_L4");
-	hL5->SetName( "h29_twoDegree_L5");
-	hL6->SetName( "h29_twoDegree_L6");
-	hL7->SetName( "h29_twoDegree_L7");
-	hL8->SetName( "h29_twoDegree_L8");
-	hL9->SetName( "h29_twoDegree_L9");
-	hL10->SetName("h29_twoDegree_L10");
+	hL0->SetName( "h24_tenDegree_L0");				// copied
+	hL1->SetName( "h24_tenDegree_L1");
+	hL2->SetName( "h24_tenDegree_L2");
+	hL3->SetName( "h24_tenDegree_L3");
+	hL4->SetName( "h24_tenDegree_L4");
+	hL5->SetName( "h24_tenDegree_L5");
+	hL6->SetName( "h24_tenDegree_L6");
+	hL7->SetName( "h24_tenDegree_L7");
+	hL8->SetName( "h24_tenDegree_L8");
+	hL9->SetName( "h24_tenDegree_L9");
+	hL10->SetName("h24_tenDegree_L10");
 	
 
 	// Write out
-	hL0->Write( "h29_twoDegree_L0",  TObject::kWriteDelete);				
-	hL1->Write( "h29_twoDegree_L1",  TObject::kWriteDelete);				
-	hL2->Write( "h29_twoDegree_L2",  TObject::kWriteDelete);
-	hL3->Write( "h29_twoDegree_L3",  TObject::kWriteDelete);
-	hL4->Write( "h29_twoDegree_L4",  TObject::kWriteDelete);
-	hL5->Write( "h29_twoDegree_L5",  TObject::kWriteDelete);
-	hL6->Write( "h29_twoDegree_L6",  TObject::kWriteDelete);
-	hL7->Write( "h29_twoDegree_L7",  TObject::kWriteDelete);
-	hL8->Write( "h29_twoDegree_L8",  TObject::kWriteDelete);
-	hL9->Write( "h29_twoDegree_L9",  TObject::kWriteDelete);
-	hL10->Write("h29_twoDegree_L10", TObject::kWriteDelete);
+	hL0->Write( "h24_tenDegree_L0",  TObject::kWriteDelete);				
+	hL1->Write( "h24_tenDegree_L1",  TObject::kWriteDelete);				
+	hL2->Write( "h24_tenDegree_L2",  TObject::kWriteDelete);
+	hL3->Write( "h24_tenDegree_L3",  TObject::kWriteDelete);
+	hL4->Write( "h24_tenDegree_L4",  TObject::kWriteDelete);
+	hL5->Write( "h24_tenDegree_L5",  TObject::kWriteDelete);
+	hL6->Write( "h24_tenDegree_L6",  TObject::kWriteDelete);
+	hL7->Write( "h24_tenDegree_L7",  TObject::kWriteDelete);
+	hL8->Write( "h24_tenDegree_L8",  TObject::kWriteDelete);
+	hL9->Write( "h24_tenDegree_L9",  TObject::kWriteDelete);
+	hL10->Write("h24_tenDegree_L10", TObject::kWriteDelete);
 	
 }
